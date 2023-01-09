@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tomy;
+}
+@font-face {
+    font-family: tomy;
+    src: url(MADETOMMY.woff);
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#form{
+    width: 30%;
+}
+#form h2{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#form *{
+    display: block;
+}
+#form label{
+    font-size: 17px;
+    margin: 0 0 2px 5px;
+}
+#form input{
+    width: 95%;
+    height: 25px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    font-size: 16.7px;
+    outline: none;
+}
+#form button{
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 20px;
+    font-size: 18px;
+    background: #0099ff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 4px 4px 12px rgb(0, 0, 0, .3);
+    transition: .2s;
+}
+#form button:hover{
+    box-shadow: 4px 4px 17px rgb(0, 0, 0, .5);
+    transition: .2s;
+}
+table{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, .2);
+}
+table, th, td{
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th,td{
+    padding: 6px 15px;
+}
+th{
+    font-size: 17px;
+    text-align: left;
+    background: #e3e3e3;
+}
+td a{
+    text-decoration: none;
+    color: #303030;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+td a:hover{
+    color: #3b3b3b;
+    text-decoration: underline;
+}
+/* odd é aplicado a todos os elementos impares */
+table tr:nth-child(odd):hover{
+    /* background: gray; */
+}
+/* even é aplicado a todos os elementos impares */
+table tr:nth-child(even){
+    background: #f2f2f2;
+}
+table tr:hover{
+    background: #dedede;
+}
